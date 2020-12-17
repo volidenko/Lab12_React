@@ -1,24 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import Quote from './Quote';
+import RandomNumber from './RandomNumber';
+import ItemList, {ListItem} from './ItemList';
+import List from './ItemList';
+
 
 function App() {
+  let quote = "Какая-то интересная и умная цитата";
+  let author = "Уильям Шекспир";
+  let listData = {
+    title: "Список предстоящих праздников",
+    items: ["День Святого Николая", "Католическое Рождество", "Новый год", "Рождество"]
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Quote text={quote} author={author}></Quote>
+      {/* <RandomNumber min={3} max={10}></RandomNumber> */}
+      {/* <List data={listData}></List> */}
+    </>
   );
 }
 
