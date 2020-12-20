@@ -11,3 +11,5 @@ export default function Quote(props) {
 }
 //Quote.defaultProps={text:"Hello, World!", author: "Volodymyr Hordiienko"}
 Quote.defaultProps={};
+Quote.defaultProps.text="Hello, World!";
+Quote.defaultProps.author="Volodymyr Hordiienko";
