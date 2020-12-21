@@ -15,7 +15,9 @@ function App() {
   }
   return (
     <>
+      <Quote text={quote} author={author}></Quote>
       <Quote></Quote>
+
       {/* <RandomNumber min={3} max={10}></RandomNumber> */}
       {/* <List data={listData}></List> */}
     </>
